@@ -1,0 +1,15 @@
+# programa que pide dos num por puerto de entrada y devuelve 
+# resulktado por puerto de salida 
+
+
+<reg>
+PC:1000 #Establece inicio de programa 
+</reg>
+
+<mem>
+1000: 4000  # IN r0,IP00 
+1001: 4100  # IN r1,IP00 
+1002: 6201  # ADDS r2,r0,r1
+1003: 5200  # OUT OP00, r2
+1004: F000  # HALT 
+</mem>

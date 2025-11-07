@@ -1,0 +1,16 @@
+# Programa que pida dos numeros por puerto de entrada y devuelva el mayor por puerta de salida 
+
+<reg>
+
+PC:1000
+
+</reg> 
+
+<mem>
+
+    1000: 4000  #IN r0,00 
+    1001: 4100  #IN r1,00 
+    1002: 7201  #SUBS r2 r0-r1
+    1003: F000  #HALT 
+
+</mem>

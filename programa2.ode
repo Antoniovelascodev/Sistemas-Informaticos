@@ -1,0 +1,24 @@
+# programa que pide dos num por puerto de entrada y devuelve 
+# resulktado por puerto de salida 
+
+
+<reg>
+PC:1000 #Establece inicio de programa 
+</reg>
+
+<mem>
+
+        1000: 2D00 #LLI rD,00 
+        1001: 3D20 #LHI rD,20 
+        1002: 2000 #LLI R0,00
+        1003: 2100 #LLI R1,00
+        1004: 4000 #IN r0,IP00
+        1005: 6110 #ADDS r1,r1,r0
+        1006: 4000 #IN r0,IP00
+        1007: 6110 #ADDS r1,r1,r0
+        1008: 4000 #IN r0,IP00
+        1009: 6110 #ADDS r1,r1,r0
+        100A: 1100 #ST [00], r1
+        100B: F000 #HALT 
+
+</mem>
